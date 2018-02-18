@@ -1,0 +1,414 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Roboto;
+    font-size: 12px;
+    color: #424242;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+                                /*HEADER*/
+
+.header {
+    width: 100%;
+}
+
+.header__inner {
+    padding: 10px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    vertical-align: bottom;
+}
+
+.title__container {
+    height: 50px;
+    display: inline-block;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 9px;
+    font-weight: bold;
+}
+
+.sub-title {
+    font-size: 15px;
+}
+
+#menu {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#menu > svg {
+    width: 40px;
+    fill: #424242;
+}
+
+                                /*NAV BAR*/
+
+.nav {
+    width: 100%;
+    position: absolute;
+    transform: translate(-100%, 0);
+    transition: transform 0.3s ease;
+    z-index: 10;
+    left: 0;
+    margin-top: 10px;
+}
+
+.nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.item {
+    display: inline-block;
+    background: white;
+    width: 100%;
+    border-bottom: 1px solid #6b6b6b;
+}
+
+.list:first-child {
+    border-top: 1px solid #6b6b6b;
+}
+
+.item a {
+    display: block;
+    padding: 0.5em;
+    color: #424242;
+    font-size: 1.7em;
+    text-decoration: none;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}
+
+                                    /*MAIN*/
+
+main {
+    width: 100%;
+}
+
+                                    /*HERO*/
+
+.hero {
+    position: relative;
+    transition: .1s ease opacity;
+    opacity: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hero-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.left-arrow, .right-arrow {
+    position: absolute;
+    background: transparent;
+    border: 0;
+    bottom: 2px;
+    font-size: 3em;
+    padding: 15px;
+    cursor: pointer;
+    height: 100%;
+    color: rgba(66, 91, 167, 0.8);
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.left-arrow:hover {
+    background: rgba(147, 147, 147, 0.2);
+    color: rgba(66, 91, 167, 0.8);
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.right-arrow:hover {
+    background: rgba(147, 147, 147, 0.2);
+    color: rgba(66, 91, 167, 0.8);
+}
+
+button:focus {
+    outline:0;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.hero_img {
+    width: 100%;
+}
+
+.hero_caption {
+    background: rgba(2, 179, 228, 0.5);
+    position: absolute;
+    height: 2em;
+    bottom: 2px;
+    left: 0;
+    line-height: 2em;
+    font-size: 2em;
+    padding-left: 10px;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+    color: white;
+}
+
+                                /*PROJECTS*/
+
+.projects_title {
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.project {
+    padding: 1em;
+    width: 95%;
+    margin: auto;
+    margin-bottom: auto;
+    border: 1px solid #d7d7d7;
+    margin-bottom: 2em;
+    border-radius: 10px;
+}
+
+.project a {
+    color: #424242;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.project_img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.project_title {
+    display: inline-block;
+}
+
+.project_descriptions {
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 0;
+    max-height: 4em;
+    overflow: hidden;
+    margin-bottom: 0.5em;
+}
+
+.read-more a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #424242;
+}
+
+                                    /*FOOTER*/
+.footer {
+    background: #272727;
+    min-height: 100px;
+}
+
+.footer_inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_item {
+    display: inline-block;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.footer_content {
+    font-size: 1.3em;
+    padding: 1em;
+    padding-top: 0;
+}
+
+.footer_item > a {
+    display: block;
+    padding: 1em;
+    color: whitesmoke;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 0.7em 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer svg {
+    margin-right: 1em;
+}
+
+                            /*MEDIA QUERIES*/
+
+@media screen and (max-width: 499px) {
+
+    .hero_caption {
+        font-size: 1.5em;
+    }
+
+    .hero_img {
+        width: auto;
+        height: 260px;
+        margin-left: -20px;
+
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .project {
+        padding: 2em;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+
+    .project {
+        padding: 2em;
+    }
+
+    .nav {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .project {
+        width: 48%;
+        margin: auto;
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+    .list:first-child {
+        border-top: 0;
+    }
+
+    .footer_item {
+        width: 33.333%;
+    }
+
+    .item {
+        width: auto;
+        border-bottom: 0;
+        background: transparent;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .nav {
+        width: auto;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        position: inherit;
+        display: inline-block;
+        left: auto;
+        margin: auto;
+    }
+
+    .title__container {
+        float: right;
+        margin-right: 10px;
+    }
+
+    .sub-title {
+        float: right;
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+    .project {
+        width: 32%;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+
+    main {
+        width: 1100px;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    .header__inner {
+        margin: auto;
+        width: 1100px;
+        padding: 10px 0;
+    }
+
+    .footer_inner {
+        width: 1100px;
+        margin: auto;
+        display: flex;
+    }
+
+    .footer_description {
+        text-align: left;
+    }
+
+}
