@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio Site</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="css/main.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script defer src="js/animations.js"></script>
 </head>
 
 <body>
 
     <header class="header">
-        <div class="header__inner">
+        <div class="header-inner">
             <!--LOGO FROM: http://clipart-library.com/cool-logos.html-->
             <img class="logo" src="img/logo.png" alt="I am my company">
-            <nav id="nav_bar" class="nav">
+            <nav id="nav-bar" class="nav">
                 <ul class="list">
                     <li class="item"><a href="#home">Home</a></li>
                     <li class="item"><a href="#projects">Projects</a></li>
@@ -27,13 +26,13 @@
                 </ul>
             </nav>
 
-            <div class="title__container">
+            <div class="title-container">
                 <div class="title">
                     Alessandro Battisti
                 </div>
                 <span class="sub-title"> Front-end developer </span>
             </div>
-            <a id="menu" class="header__menu">
+            <a id="menu" class="header-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
                     <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
                 </svg>
@@ -46,46 +45,46 @@
         <section class="content">
             <section class="hero-container">
                 <div class="hero">
-                    <picture>
-                        <source media="(max-width: 600px)" srcset="img/img_1_pexels.com-600px.jpg">
-                        <source media="(min-width: 1100px)" srcset="img/img_1_pexels.com-1200px.jpg">
-                        <img class="hero_img" src="img/img_1_pexels.com-1200px.jpg" alt="img 1">
-                    </picture>
-                    <p class="hero_caption">Image description 1</p>
+                    <img class="hero-img"
+                        src="img/img_1_pexels.com-1200px.jpg"
+                        srcset="img/img_1_pexels.com-600px.jpg 600w,
+                                img/img_1_pexels.com-1200px.jpg 1200w"
+                        alt="img 1">
+                    <p class="hero-caption">Image description 1</p>
                 </div>
                 <div class="hero">
-                    <picture>
-                        <source media="(max-width: 600px)" srcset="img/img_2_pexels.com-600px.jpg">
-                        <source media="(min-width: 1100px)" srcset="img/img_2_pexels.com-1200px.jpg">
-                        <img class="hero_img" src="img/img_2_pexels.com-1200px.jpg" alt="img 2">
-                    </picture>
-                    <p class="hero_caption">Image description 2</p>
+                    <img class="hero-img"
+                        src="img/img_2_pexels.com-1200px.jpg"
+                        srcset="img/img_2_pexels.com-600px.jpg 600w,
+                                img/img_2_pexels.com-1200px.jpg 1200w"
+                        alt="img 2">
+                    <p class="hero-caption">Image description 2</p>
                 </div>
                 <div class="hero">
-                    <picture>
-                        <source media="(max-width: 600px)" srcset="img/img_3_pexels.com-600px.jpg">
-                        <source media="(min-width: 1100px)" srcset="img/img_3_pexels.com-1200px.jpg">
-                        <img class="hero_img" src="img/img_2_pexels.com-1200px.jpg" alt="img 3">
-                    </picture>
-                    <p class="hero_caption">Image description 3</p>
+                    <img class="hero-img"
+                        src="img/img_3_pexels.com-1200px.jpg"
+                        srcset="img/img_3_pexels.com-600px.jpg 600w,
+                                img/img_3_pexels.com-1200px.jpg 1200w"
+                        alt="img 3">
+                    <p class="hero-caption">Image description 3</p>
                 </div>
                 <button class="left-arrow">❮</button>
                 <button class="right-arrow">❯</button>
             </section>
 
             <section class="projects" id="projects">
-                <h1 class="projects_title">Featured work </h1>
+                <h1 class="projects-title">Featured work </h1>
                 <article class="project">
                     <a href="#">
                         <picture>
                             <source media="(max-width: 400px)" srcset="img/pexels-1-400px.jpg">
                             <source media="(max-width: 1099px)" srcset="img/pexels-1-600px.jpg">
                             <source media="(min-width: 1100px)" srcset="img/pexels-1-400px.jpg">
-                            <img class="project_img" src="img/pexels-1-400px.jpg" alt="img 1">
+                            <img class="project-img" src="img/pexels-1-400px.jpg" alt="img 1">
                         </picture>
                     </a>
-                    <h2 class="project_title"> <a href="#"> Title 1 </a> </h2>
-                    <p class="project_descriptions">
+                    <h2 class="project-title"> <a href="#"> Title 1 </a> </h2>
+                    <p class="project-descriptions">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -100,11 +99,11 @@
                             <source media="(max-width: 400px)" srcset="img/pexels-2-400px.jpg">
                             <source media="(max-width: 1099px)" srcset="img/pexels-2-600px.jpg">
                             <source media="(min-width: 1100px)" srcset="img/pexels-2-400px.jpg">
-                            <img class="project_img" src="img/pexels-2-400px.jpg" alt="img 2">
+                            <img class="project-img" src="img/pexels-2-400px.jpg" alt="img 2">
                         </picture>
                     </a>
-                    <h2 class="project_title"> <a href="#"> Title 2 </a> </h2>
-                    <p class="project_descriptions">
+                    <h2 class="project-title"> <a href="#"> Title 2 </a> </h2>
+                    <p class="project-descriptions">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -119,11 +118,11 @@
                             <source media="(max-width: 400px)" srcset="img/pexels-3-400px.jpg">
                             <source media="(max-width: 1099px)" srcset="img/pexels-3-600px.jpg">
                             <source media="(min-width: 1100px)" srcset="img/pexels-3-400px.jpg">
-                            <img class="project_img" src="img/pexels-3-400px.jpg" alt="img 3">
+                            <img class="project-img" src="img/pexels-3-400px.jpg" alt="img 3">
                         </picture>
                     </a>
-                    <h2 class="project_title"> <a href="#"> Title 3 </a> </h2>
-                    <p class="project_descriptions">
+                    <h2 class="project-title"> <a href="#"> Title 3 </a> </h2>
+                    <p class="project-descriptions">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -138,11 +137,11 @@
                             <source media="(max-width: 400px)" srcset="img/pexels-4-400px.jpg">
                             <source media="(max-width: 1099px)" srcset="img/pexels-4-600px.jpg">
                             <source media="(min-width: 1100px)" srcset="img/pexels-4-400px.jpg">
-                            <img class="project_img" src="img/pexels-4-400px.jpg" alt="img 4">
+                            <img class="project-img" src="img/pexels-4-400px.jpg" alt="img 4">
                         </picture>
                     </a>
-                    <h2 class="project_title"> <a href="#"> Title 4 </a> </h2>
-                    <p class="project_descriptions">
+                    <h2 class="project-title"> <a href="#"> Title 4 </a> </h2>
+                    <p class="project-descriptions">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -157,11 +156,11 @@
                             <source media="(max-width: 400px)" srcset="img/pexels-5-400px.jpg">
                             <source media="(max-width: 1099px)" srcset="img/pexels-5-600px.jpg">
                             <source media="(min-width: 1100px)" srcset="img/pexels-5-400px.jpg">
-                            <img class="project_img" src="img/pexels-5-400px.jpg" alt="img 5">
+                            <img class="project-img" src="img/pexels-5-400px.jpg" alt="img 5">
                         </picture>
                     </a>
-                    <h2 class="project_title"> <a href="#"> Title 5 </a> </h2>
-                    <p class="project_descriptions">
+                    <h2 class="project-title"> <a href="#"> Title 5 </a> </h2>
+                    <p class="project-descriptions">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -176,11 +175,11 @@
                             <source media="(max-width: 400px)" srcset="img/pexels-6-400px.jpg">
                             <source media="(max-width: 1099px)" srcset="img/pexels-6-600px.jpg">
                             <source media="(min-width: 1100px)" srcset="img/pexels-6-400px.jpg">
-                            <img class="project_img" src="img/pexels-6-400px.jpg" alt="img 6">
+                            <img class="project-img" src="img/pexels-6-400px.jpg" alt="img 6">
                         </picture>
                     </a>
-                    <h2 class="project_title"> <a href="#"> Title 6 </a> </h2>
-                    <p class="project_descriptions">
+                    <h2 class="project-title"> <a href="#"> Title 6 </a> </h2>
+                    <p class="project-descriptions">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -193,25 +192,25 @@
         </section>
     </main>
     <footer class="footer" id="contact">
-        <div class="footer_inner">
-            <div class="footer_item">
-                <div class="footer_content">
+        <div class="footer-inner">
+            <div class="footer-item">
+                <div class="footer-content">
                     <p class="footer-title">A. Battisti</p>
-                    <p class="footer_description">
+                    <p class="footer-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et.
                     </p>
                 </div>
             </div>
-            <div class="footer_item">
-                <div class="footer_content">
+            <div class="footer-item">
+                <div class="footer-content">
                     <p class="footer-title">Follow me</p>
                     <p><i class="fab fa-google-plus-square"></i> Google +</p>
                     <p><i class="fab fa-facebook-square"></i> Facebook</p>
                 </div>
             </div>
-            <div class="footer_item">
-                <div class="footer_content">
+            <div class="footer-item">
+                <div class="footer-content">
                     <p class="footer-title">Contacts</p>
                     <p><i class="fa fa-envelope"></i> test@test.it</p>
                     <p><i class="fa fa-phone"></i>+1 123 456 789</p>
@@ -219,6 +218,8 @@
             </div>
         </div>
     </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script defer src="js/animations.js"></script>
 </body>
 
 </html>
